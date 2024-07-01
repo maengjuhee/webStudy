@@ -1,0 +1,62 @@
+<!-- 
+	  1. 단위 
+	     px / % / em
+	              배수 단위
+	         백분율 단위
+	  2. 색상 단위
+	      background-color:red
+	      background-color:rgb(255,255,200)
+	      background-color:#F0F (255,0,255)
+	  3. URL 단위
+	      background:url('경로명')
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p:nth-child(1){
+		background-color: red;
+	}
+	p:nth-child(2){
+		/*font-size: 100%;*/
+		font-size: 1.0em;
+		background-color: #F00;
+	}
+	p:nth-child(3){
+		/*font-size: 150%;*/
+		font-size: 1.5em;
+		background-color: rgb(255, 0, 0);
+	}
+	p:nth-child(4){
+		/*font-size: 200%;*/
+		font-size: 2.0em; /* 배수 : 14px(기본) => 2.0*14(2배) */
+		background-color: #FF0000;
+	}
+	div{
+		/* width/height 설정하는 것 권장 */
+		width: 500px;
+		height: 500px;
+		background-image: url('ico_user.png');
+		background-repeat: no-repeat; /* 반복하지 않는다 = tile */
+		/*background-size: cover;*/
+
+	}
+	h1{
+		color: white;
+		padding-left: 100px;
+		padding-top: 250px;
+	}
+</style>
+</head>
+<body>
+   <p>손웅정 감독님, 이제 그런 교육은 안 됩니다</p>
+   <p>"이렇게 빨리 발전하다니" 캐나다가 놀랐다</p>
+   <p>"반드시 짚고 넘어가야" 실책 줄이기 묘수 </p>
+   <p>'외국인 감독 데려오나' 축구대표팀 새 감독 선임</p>
+   <div>
+	   <h1>Hello Background</h1>
+   </div>
+</body>
+</html>
