@@ -11,12 +11,13 @@
 			if(i==0)
 			{
 				$(this).val('취소')
-				$('#white').show()
+				$('#write').show()
 				i=1;
 			}
-			else{
+			else
+			{
 				$(this).val('댓글')
-				$('#white').hide()
+				$('#write').hide()
 				i=0;
 			}
 		})
@@ -24,16 +25,16 @@
 </script>
 </head>
 <body>
-   <table border="1" bordercolor="black" width="500">
-	   <tr>
-		   <td>Hello Display</td>
-		   <td><input type="button" value="댓글"></td>
-	   </tr>
-	   <tr style="display: none;" id="write">
-		   <td>
-			   <textarea row="5" cols="50"></textarea>
-		   </td>
-	   </tr>
-   </table>
+  <table border="1" bordercolor="black" width="500">
+	  <tr>
+		  <td>Hello Display</td>
+		  <td><input type="button" value="댓글"></td>
+	  </tr>
+	  <tr style="display: none;" id="write">
+		  <td>
+			  <textarea rows="5" cols="50"></textarea>
+		  </td>
+	  </tr>
+  </table>
 </body>
 </html>
