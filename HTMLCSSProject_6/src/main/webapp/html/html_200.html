@@ -1,0 +1,58 @@
+<!--
+	 지정된 영역을 벗어나는 경우
+	 => hidden / scroll
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body > div{
+		width: 400px;
+		height: 100px;
+		position: relative;
+		border: 2px solid black;
+		/* overflow: hidden; */
+		overflow: scroll;
+
+	}
+	.d{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+	}
+	.a{
+		background-color: red;
+		left: 10px;
+		top: 10px;
+		z-index: 100;
+	}
+	.b{
+		background-color: green;
+		left: 50px;
+		top: 50px;
+		z-index: 10;
+	}
+	.c{
+		background-color: blue;
+		left: 90px;
+		top: 90px;
+		z-index: 1;
+	}
+</style>
+</head>
+<body>
+  <h1>
+	  손웅정, 벌금형이라도 받으면 '170억'
+  </h1>
+  <div>
+     <div class="a d"></div>
+     <div class="b d"></div>
+     <div class="c d"></div>
+  </div>
+  <h1>
+	  '호날두 PK 실축+눈물 펑펑' 포르투갈
+  </h1>
+</body>
+</html>
