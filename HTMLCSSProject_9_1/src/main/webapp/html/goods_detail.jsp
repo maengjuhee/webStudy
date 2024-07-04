@@ -3,6 +3,7 @@
 <% 
    GoodsDAO dao=GoodsDAO.newInstance();
    String no=request.getParameter("no");
+   String type=request.getParameter("type");
    GoodsVO vo=dao.goodsDetailData(Integer.parseInt(no));
 %>
 <!DOCTYPE html>
