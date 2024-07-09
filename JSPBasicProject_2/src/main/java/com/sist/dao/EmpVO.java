@@ -1,12 +1,11 @@
 package com.sist.dao;
 import java.util.*;
-import java.util.Date;
 
 import lombok.Data;
 @Data
 public class EmpVO {
-	private int empno,deptno,sal,comm,mgr;
-    private String ename,job;
-    private Date hiredate;
-    private DeptVO dvo=new DeptVO();
+   private int empno,deptno,sal,comm,mgr;
+   private String ename,job;
+   private Date hiredate;
+   private DeptVO dvo=new DeptVO(); // JOIN
 }

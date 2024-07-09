@@ -59,49 +59,43 @@ import javax.servlet.http.HttpServletResponse;
 
  *    
  */
-
 @WebServlet("/FirstServlet")
 public class FirstServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
-    public FirstServlet() {
-        // TODO Auto-generated constructor stub
-    }
-
-    private String msg;
+	private String msg;
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		msg="Hello Servlet!!";
-		// web.xml을 통해서 필요한 데이터 전송
+		// web.xml을 통해서 필요한 데이터 전송 
 		// web.xml을 읽어오는 라이브러리 ServletConfig config
-		System.out.println("Init(ServletConfig config) Call...");
+		System.out.println("init(ServletConfig config) Call...");
 	}
 
+	
 	public void destroy() {
 		// TODO Auto-generated method stub
-		System.out.println("destroy() : 서블릿 메모리 해제");
+		System.out.println("destroy(): 서블릿 메모리 해제");
 	}
 
-	/*
-	 *     브라우저 : localhost 요청
-	 *     DNS : localhost => 127.0.0.1 (IP로 변환)
-	 *     변환된 IP를 이용해서 서버에 접속
-	 *          => new Socket(ip,80)
-	 *     파일 찾아서 => 실행된 결과를 메모리에 저장
-	 *                out.write("<html>")
-	 *     브라우저에서 HTML을 한줄 씩 읽어서 번역
-	 *     
+	/* 
+	 *    브라우저 : localhost 요청 
+	 *    DNS : localhost => 127.0.0.1 (IP로 변환) 
+	 *    변환된 IP를 이용해서 서버에 접속 
+	 *         => new Socket(ip,80) 
+	 *    파일찾아서 => 실행된 결과를 메모리에 저장 
+	 *               out.write("<html>")
+	 *    브라우저에서 HTML을 한줄씩 읽어서 번역 
 	 * 
 	 */
-
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 디폴트 => 화면 출력
-		// 1. 전송 방식
+		// 디폴트 => 화면 출력 
+		// 1. 전송 방식 
 		response.setContentType("text/html;charset=UTF-8");
-		// 2. HTML을 요청한 브라우저로 전송
-		PrintWriter out=response.getWriter(); //브라우저 확인 (response 안에 IP를 가지고 있다)
-		// out영역에 HTML을 작성하면 브라우저에서 읽어간다 => 화면에 출력된다
+		// 2. HTML을 요청한 브라우저로 전송 
+		PrintWriter out=response.getWriter(); // 브라우저 확인 (response안에 IP를 가지고 있다)
+		// out영역에 HTML을 작성하면 브라우저에서 읽어간다 => 화면에 출력 된다 
 		out.write("<html>");
 		out.write("<body>");
 		out.write("<center>");
@@ -112,6 +106,7 @@ public class FirstServlet extends HttpServlet {
 		out.write("</body>");
 		out.write("</html>");
 	}
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
