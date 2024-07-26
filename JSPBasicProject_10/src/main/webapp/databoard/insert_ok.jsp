@@ -1,7 +1,7 @@
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*,java.io.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*,java.io.*"%>
 <%-- 
     사용자가 보내준 데이터를 받아서 처리후에 다시 목록으로 이동 
     // JSP : 입력값을 받아서 처리 (데이터베이스 처리) 이동  ==> _ok

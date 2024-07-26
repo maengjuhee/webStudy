@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*"%>
 <%
     // _ok => 데이터를 받아서 데이터베이스 처리 => 이동 (화면 출력하는 JSP가 아니다)
     // 1. 사용자가 보내준 값을 받는다 

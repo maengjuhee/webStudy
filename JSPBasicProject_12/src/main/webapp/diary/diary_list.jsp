@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*,com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <%--
       데이터 전송 => 사용후 버린다 <form> , <a> 
                  사용후에 계속 유지 : id , 방문내용 , 상품 구매 

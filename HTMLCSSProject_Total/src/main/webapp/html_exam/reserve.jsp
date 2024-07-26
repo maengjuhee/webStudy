@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*, com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <%
     // 출력할 데이터를 가지고 온다
     FoodDAO dao=FoodDAO.newInstance();

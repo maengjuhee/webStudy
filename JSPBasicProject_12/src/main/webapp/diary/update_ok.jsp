@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*"%>
 <%
-   request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("UTF-8");
    /*
       전체값을 받아서 => VO에 담는다
       =====================
@@ -10,7 +10,7 @@
         public void update_ok(DiaryVO vo) => 메소드 매개변수로 값을 받는다
    */
 %>
-<jsp:useBean id="vo" class="com.sist.dao.DiaryVO">
+<jsp:useBean id="vo" class="com.sist.manager.DiaryVO">
   <jsp:setProperty name="vo" property="*"/>
 </jsp:useBean>
 <%

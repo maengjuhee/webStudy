@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*"%>
 <%-- 
      food_detail.jsp?fno=1
                      ===== 맛집 1번에 상세보기 요청

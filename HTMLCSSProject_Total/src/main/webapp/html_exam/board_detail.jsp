@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*"%>
 <% 
     // 사용자가 보내준 값을 받는다 
     String no=request.getParameter("no");

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*,com.sist.dao.*"%>
-<jsp:useBean id="dao" class="com.sist.dao.FoodDAO"></jsp:useBean>
+    pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
+<jsp:useBean id="dao" class="com.sist.manager.FoodDAO"></jsp:useBean>
 <%
    // 출력할 데이터를 출력
    // 자바는 자신의 객체 => this, jsp=> 자신의 객체 => page 

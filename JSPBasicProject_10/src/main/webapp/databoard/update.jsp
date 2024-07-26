@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.sist.dao.*"%>
+    pageEncoding="UTF-8" import="com.sist.manager.*"%>
 <%
      String no=request.getParameter("no");
      DataBoardDAO dao=DataBoardDAO.newInstance();
