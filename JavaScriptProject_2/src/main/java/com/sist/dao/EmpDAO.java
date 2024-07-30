@@ -21,7 +21,7 @@ public class EmpDAO {
 	  {
 		  conn=dbConn.getConnection();
 		  String sql="SELECT empno,ename,job,TO_CHAR(hiredate,'YYYY-MM-DD'),sal "
-				  +"FROM emp";
+				    +"FROM emp";
 		  ps=conn.prepareStatement(sql);
 		  ResultSet rs=ps.executeQuery();
 		  while(rs.next())
@@ -32,9 +32,7 @@ public class EmpDAO {
 			  vo.setJob(rs.getString(3));
 			  vo.setDbday(rs.getString(4));
 			  vo.setSal(rs.getInt(5));
-			  
 			  list.add(vo);
-			  
 		  }
 		  rs.close();
 	  }catch(Exception ex)
