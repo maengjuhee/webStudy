@@ -2,14 +2,14 @@
     pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <jsp:useBean id="dao" class="com.sist.manager.FoodDAO"></jsp:useBean>
 <%
-   // 출력할 데이터를 출력
+// 출력할 데이터를 출력
    // 자바는 자신의 객체 => this, jsp=> 자신의 객체 => page 
    String strPage=request.getParameter("page");
    if(strPage==null)
       strPage="1";
    
    int curpage=Integer.parseInt(strPage);
-   List<FoodVO> list=dao.foodListData(curpage);
+   List<FoodDAO> list=dao.foodListData(curpage);
    int totalpage=dao.foodTotalPage();
 %>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 <body>
    <div class="row">
    <%
-      for(FoodVO vo:list){
+   for(FoodDAO vo:list){
    %>
       <div class="col-sm-3">
          <a href="#">
