@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <%
-    /*
+/*
        1. 사용자로부터 요청값을 받는다 => request.getParameter()
                               ========================
                               사용자가 보내준 값을 받을 떄
@@ -21,9 +21,9 @@
     	strPage="1";
     int curpage=Integer.parseInt(strPage);
                                           
-    List<FoodVO> list=dao.foodListData(curpage);
+    List<FoodDAO> list=dao.foodListData(curpage);
     
-    for(FoodVO vo:list)
+    for(FoodDAO vo:list)
     {
     	String img=vo.getPoster();
     	img=img.replace("https", "http");
@@ -52,7 +52,6 @@
                endPage=20
         
     */
-    
 %>
 <!DOCTYPE html>
 <html>
@@ -79,8 +78,8 @@
    <div class="container">
      <div class="row">
      <%
-         for(FoodVO vo:list)
-         {
+     for(FoodDAO vo:list)
+              {
      %>
       <div class="col-sm-3">
        <div class="thumbnail"><!-- 이미지 카드: 이미지+제목 -->

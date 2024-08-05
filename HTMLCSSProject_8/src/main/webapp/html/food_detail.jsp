@@ -9,10 +9,10 @@
                      => 모든 전송된 데이터는 문자열
  --%>
  <%
-     FoodDAO dao=FoodDAO.newInstance();
-     String fno=request.getParameter("fno");
-     FoodVO vo=dao.foodDetailData(Integer.parseInt(fno));
-     //     == vo에 저장된 데이터를 출력 => 상세보기
+ FoodDAO dao=FoodDAO.newInstance();
+      String fno=request.getParameter("fno");
+      FoodDAO vo=dao.foodDetailData(Integer.parseInt(fno));
+      //     == vo에 저장된 데이터를 출력 => 상세보기
  %>
 <!DOCTYPE html>
 <html>
