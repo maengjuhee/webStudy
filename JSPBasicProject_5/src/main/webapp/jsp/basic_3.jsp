@@ -4,7 +4,7 @@
     pageEncoding="UTF-8" import="java.util.*,com.sist.database.*"%>
 <%
     DataBaseConnection dbConn=new DataBaseConnection();
-    Connection conn=dbConn.getConnection();
+    Connection conn=dbConn.getConnection();  
     String sql="SELECT * FROM dept";
     PreparedStatement ps=conn.preparedStatement(sql);
     ResultSet rs=ps.executeQuery();
