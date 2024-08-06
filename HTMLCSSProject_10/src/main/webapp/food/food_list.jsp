@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <%
-   /*
+/*
       1. 웹 출력
          => 데이터를 가지고 온다 : 오라클 (자바)
                            SQL  JDBC
@@ -19,7 +19,7 @@
    int curpage=Integer.parseInt(strPage);
    
    FoodDAO dao=FoodDAO.newInstance();
-   List<FoodVO> list=dao.foodListData(Integer.parseInt(type), curpage);
+   List<FoodDAO> list=dao.foodListData(Integer.parseInt(type), curpage);
    int totalpage=dao.foodListTotalPage(Integer.parseInt(type));
    
    // 블럭별 페이지 나누기
@@ -73,8 +73,8 @@
        <div class="row">
           <%-- 이미지 출력 --%>
           <%
-            for(FoodVO vo:list)
-            {
+          for(FoodDAO vo:list)
+                      {
           %>
           <div class="col-sm-3">
             <a href="#">

@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
 <%
-    // 출력할 데이터를 가지고 온다
+// 출력할 데이터를 가지고 온다
     FoodDAO dao=FoodDAO.newInstance();
-    List<FoodVO> list=dao.foodListData();
+    List<FoodDAO> list=dao.foodListData();
     // JSP = Java ,  .net = #C   장고 = python(*****)
     /*
         자바와 동일 => 문법
@@ -68,8 +68,8 @@ $(function(){
                 <th></th>
                </tr>
                <%
-                  for(FoodVO vo:list)
-                  {
+               for(FoodDAO vo:list)
+                                 {
                %>
                       <tr class="infos" data-name="<%=vo.getName() %>" data-poster="<%=vo.getPoster() %>">
                         <%--

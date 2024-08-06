@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,com.sist.manager.*"%>
-<%  
-   FoodDAO dao=FoodDAO.newInstance();
-   List<FoodVO> list=dao.foodListData();
+<%
+FoodDAO dao=FoodDAO.newInstance();
+   List<FoodDAO> list=dao.foodListData();
 %>
 <!DOCTYPE html>
 <html>
@@ -28,9 +28,9 @@
        <th>음식종류</th>
       </tr>
       <%
-        for(FoodVO vo:list)
-        {
-       %>
+      for(FoodDAO vo:list)
+              {
+      %>
           <tr>
             <td align=center><%=vo.getFno() %></td>
             <td align=center>
