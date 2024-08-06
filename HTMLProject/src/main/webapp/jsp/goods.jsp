@@ -9,7 +9,7 @@
    
    int curpage = Integer.parseInt(strPage);
    
-   GoodsDAO dao=GoodsDAO.newInstance();
+   GoodsDAO dao=GoodsDAO.newInstance(); 
    List<GoodsVO> list=dao.goodsListData(curpage);
    int totalpage=dao.goodsTotalPage();
    
